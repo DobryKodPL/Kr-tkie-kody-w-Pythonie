@@ -1,0 +1,61 @@
+
+#Losowanie kart
+
+import random
+while True:
+    print()
+    print('Wybierz 1 jeśli chcesz loswać karty dla gracza A')
+    print()
+    print('Wybierz 2 jeśli chcesz loswać karty dla gracza B')
+    print()
+    print('Wybierz 3 jeśli chcesz zobaczyć losowania')
+    print()
+    print('Wybierz 4 jeśli chcesz zakończyć')
+    print('\n')
+    wybor = int(input('Wybieram: '))
+    if wybor == 1:
+        ilosc = int(input('Wybierz ilość kart w rozdaniu: '))
+        rozdanie = []
+        for i in range (ilosc):
+                lista = ['2','2','2','2',
+                 '3','3','3','3',
+                 '4','4','4','4',
+                 '5','5','5','5',
+                 '6','6','6','6',
+                 '7','7','7','7',
+                 '8','8','8','8',
+                 '9','9','9','9',
+                 '10','10','10','10',
+                 'D','D','D','D',
+                 'Q','Q','Q','Q',
+                 'K','K','K','K',
+                 'J','J']
+                random.shuffle(lista)
+                karta = lista.pop()
+                rozdanie.append(karta)
+                    
+    elif wybor == 2:
+        ilosc2 = int(input('Wybierz ilość kart w rozdaniu: '))
+        rozdanie2 = []
+        for i in range (ilosc2):
+                lista2 = ['2','2','2','2',
+                 '3','3','3','3',
+                 '4','4','4','4',
+                 '5','5','5','5',
+                 '6','6','6','6',
+                 '7','7','7','7',
+                 '8','8','8','8',
+                 '9','9','9','9',
+                 '10','10','10','10',
+                 'D','D','D','D',
+                 'Q','Q','Q','Q',
+                 'K','K','K','K',
+                 'J','J']
+                random.shuffle(lista2)
+                karta2 = lista2.pop()
+                rozdanie2.append(karta2)
+    elif wybor == 3:
+        print(rozdanie)
+        print(rozdanie2)
+    else:
+        break
