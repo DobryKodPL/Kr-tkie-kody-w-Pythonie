@@ -1,0 +1,19 @@
+#lososwanie lotto
+import random
+while True:
+    print()
+    print ('Wybierz 1 jeśli chcesz zagrać w lotto')
+    print()
+    print ('Wybierz 2 jeśli chcesz zakończyć')
+    print('\n')
+    wybor = int(input('Wybieram: '))
+    if wybor == 1:
+            print()
+            ilosc = int(input('Wybierz ilość liczb: '))
+            print()
+            zakres = int(input('Wybierz zakres liczb: '))
+            print('\n')
+            wynik = random.sample(range(1,zakres+1),ilosc)
+            print (wynik)
+    else:
+            break
